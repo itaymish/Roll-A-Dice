@@ -21,7 +21,6 @@
     <button onclick="two()" id="twobutton">Two sides</button>
     <h1 id="two"></h1>
     <br>
-    <button id="refresh" onclick="window.location.reload();">Refresh</button>
     <style>
     body {
       background: green;
@@ -31,7 +30,7 @@
       text-align: center;
       font-size: 18px;
     }
-    #sixbutton, #fivebutton, #fourbutton, #threebutton, #twobutton, #refresh {
+    #sixbutton, #fivebutton, #fourbutton, #threebutton, #twobutton {
       background: white;
       color: green;
       border: solid 1px black;
@@ -68,6 +67,9 @@
          if (num == 5) {
             document.getElementById("six").innerHTML = "⚅";
          }
+         setTimeout(function() {
+           window.location.reload(1);
+         }, 3000);
       }
       function five() {
 	       var num = Math.floor(Math.random() * 5);
@@ -86,6 +88,9 @@
          if (num == 4) {
             document.getElementById("five").innerHTML = "⚄";
          }
+         setTimeout(function() {
+           window.location.reload(1);
+         }, 3000);
       }
       function four() {
 	       var num = Math.floor(Math.random() * 4);
@@ -101,6 +106,9 @@
          if (num == 3) {
             document.getElementById("four").innerHTML = "⚃";
          }
+         setTimeout(function() {
+           window.location.reload(1);
+         }, 3000);
       }
       function three() {
 	       var num = Math.floor(Math.random() * 3);
@@ -113,6 +121,9 @@
          if (num == 2) {
             document.getElementById("three").innerHTML = "⚂";
          }
+         setTimeout(function() {
+           window.location.reload(1);
+         }, 3000);
       }
       function two() {
 	       var num = Math.floor(Math.random() * 2);
@@ -122,6 +133,9 @@
          if (num == 1) {
             document.getElementById("two").innerHTML = "⚁";
          }
+         setTimeout(function() {
+           window.location.reload(1);
+         }, 3000);
       }
     </script>
   </body>
