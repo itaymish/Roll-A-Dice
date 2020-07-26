@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Roll A Dice</title>
+    <link rel="shortcut icon" href="rolladice.ico"/>
+  </head>
+  <body>
+    <button onclick="six()" id="sixbutton">Six sides</button>
+    <h1 id="six"></h1>
+    <br>
+    <button onclick="five()" id="fivebutton">Five sides</button>
+    <h1 id="five"></h1>
+    <br>
+    <button onclick="four()" id="fourbutton">Four sides</button>
+    <h1 id="four"></h1>
+    <br>
+    <button onclick="three()" id="threebutton">Three sides</button>
+    <h1 id="three"></h1>
+    <br>
+    <button onclick="two()" id="twobutton">Two sides</button>
+    <h1 id="two"></h1>
+    <br>
+    <button id="refresh" onclick="window.location.reload();">Refresh</button>
+    <style>
+    body {
+      background: green;
+      font-family: Arial;
+      color: white;
+      height: 100%;
+      text-align: center;
+      font-size: 18px;
+    }
+    #sixbutton, #fivebutton, #fourbutton, #threebutton, #twobutton, #refresh {
+      background: white;
+      color: green;
+      border: solid 1px black;
+      cursor: pointer;
+      font-size: 1.2em;
+      padding: 18px 10px;
+      width: 180px;
+      margin: 10px;
+      border: 2px solid black;
+      border-radius: 25px;
+    }
+    #six, #five, #four, #three, #two {
+      font-size: 180px;
+    }
+    </style>
+    <script>
+      function six() {
+	       var num = Math.floor(Math.random() * 6);
+         if (num == 0) {
+            document.getElementById("six").innerHTML = "⚀";
+         }
+         if (num == 1) {
+            document.getElementById("six").innerHTML = "⚁";
+         }
+         if (num == 2) {
+            document.getElementById("six").innerHTML = "⚂";
+         }
+         if (num == 3) {
+            document.getElementById("six").innerHTML = "⚃";
+         }
+         if (num == 4) {
+            document.getElementById("six").innerHTML = "⚄";
+         }
+         if (num == 5) {
+            document.getElementById("six").innerHTML = "⚅";
+         }
+      }
+      function five() {
+	       var num = Math.floor(Math.random() * 5);
+         if (num == 0) {
+            document.getElementById("five").innerHTML = "⚀";
+         }
+         if (num == 1) {
+            document.getElementById("five").innerHTML = "⚁";
+         }
+         if (num == 2) {
+            document.getElementById("five").innerHTML = "⚂";
+         }
+         if (num == 3) {
+            document.getElementById("five").innerHTML = "⚃";
+         }
+         if (num == 4) {
+            document.getElementById("five").innerHTML = "⚄";
+         }
+      }
+      function four() {
+	       var num = Math.floor(Math.random() * 4);
+         if (num == 0) {
+            document.getElementById("four").innerHTML = "⚀";
+         }
+         if (num == 1) {
+            document.getElementById("four").innerHTML = "⚁";
+         }
+         if (num == 2) {
+            document.getElementById("four").innerHTML = "⚂";
+         }
+         if (num == 3) {
+            document.getElementById("four").innerHTML = "⚃";
+         }
+      }
+      function three() {
+	       var num = Math.floor(Math.random() * 3);
+         if (num == 0) {
+            document.getElementById("three").innerHTML = "⚀";
+         }
+         if (num == 1) {
+            document.getElementById("three").innerHTML = "⚁";
+         }
+         if (num == 2) {
+            document.getElementById("three").innerHTML = "⚂";
+         }
+      }
+      function two() {
+	       var num = Math.floor(Math.random() * 2);
+         if (num == 0) {
+            document.getElementById("two").innerHTML = "⚀";
+         }
+         if (num == 1) {
+            document.getElementById("two").innerHTML = "⚁";
+         }
+      }
+    </script>
+  </body>
+</html>
